@@ -52,4 +52,16 @@
     </div>
     <div class="overlay-image"></div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load the high-resolution image
+        var highResImage = new Image();
+        highResImage.src = 'images/trees.jpg';
+    
+        // Replace the low-resolution image with the high-resolution image once it has loaded
+        highResImage.onload = function() {
+            document.body.style.backgroundImage = 'url(' + highResImage.src + ')';
+        };
+    });
+</script>
 </html>
