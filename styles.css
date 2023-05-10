@@ -1,0 +1,120 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('images/trees.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+}
+
+:root {
+    --borderc: rgba(120, 120, 120, 1)
+}
+
+.content {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    position: absolute;
+    font-size: 2vw;
+    left: 50%;
+    transform: translate(-50%, 5vw);
+    width: 60%;
+    color: white;
+    text-decoration: border(2px, white);
+    text-shadow:
+        1px 1px 0 var(--borderc),
+        -1px 1px 0 var(--borderc),
+        1px -1px 0 var(--borderc),
+        -1px -1px 0 var(--borderc),
+        0px 1px 0 var(--borderc),
+        0px -1px 0 var(--borderc),
+        -1px 0px 0 var(--borderc),
+        1px 0px 0 var(--borderc),
+        2px 2px 0 var(--borderc),
+        -2px 2px 0 var(--borderc),
+        2px -2px 0 var(--borderc),
+        -2px -2px 0 var(--borderc),
+        0px 2px 0 var(--borderc),
+        0px -2px 0 var(--borderc),
+        -2px 0px 0 var(--borderc),
+        2px 0px 0 var(--borderc),
+        1px 2px 0 var(--borderc),
+        -1px 2px 0 var(--borderc),
+        1px -2px 0 var(--borderc),
+        -1px -2px 0 var(--borderc),
+        2px 1px 0 var(--borderc),
+        -2px 1px 0 var(--borderc),
+        2px -1px 0 var(--borderc),
+        -2px -1px 0 var(--borderc),
+        2px 2px 5px black;
+}
+
+img {
+    width: 80%;
+}
+
+.overlay-image {
+    position: fixed;
+    bottom: -5vw;
+    left: 0;
+    right: 0;
+    height: 30vw;
+    width: 100vw;
+    background-image: url('images/planters.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -10;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tangerine', cursive;
+    font-size: 10vw;
+    line-height: .8;
+    font-weight: 550;
+}
+
+h2 {
+    line-height: .8;
+}
+
+ul {
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.1;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20vw;
+    }
+
+    .content {
+        font-size: 6vw;
+        width: 95%;
+    }
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
